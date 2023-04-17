@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+:root{
+    --text-color: #333333;
+    --para-color: #4F4F4F;
+    --white: #FFFFFF;
+    --footer-color: #BDBDBD;
+    --footer-link-color: #f7542e;
+    /* FONTS */
+    --ff-space-mono: 'Space Mono', monospace;   
+    --ff-inconsolata: 'Inconsolata', monospace;
+}
+
+html, body{ min-height: 100vh; }
+
+body{    
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: grid;
+    place-items: center center;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    position: fixed;
+    bottom: 10px;
+    width: 100%;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;    
+    text-align: center;
+    font-family: var(--ff-inconsolata);
+    color: var(--footer-color);
+}
+
+.attribution a{
+    color: var(--footer-link-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .attribution{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin-top: 40px;
+    }  
+}
+
+.page-container{
+    padding-top: 40px;
+    padding-left: 77px;    
+    padding-right: 120px;
+}
+
+.page-header-text{
+    font-family: var(--ff-inconsolata);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    position: absolute;
+    top: 40px;
+}
+
+.page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center center;    
+}
+
+.page-hero-image{
+    width: 540px;
+}
+
+.page-hero-content{
+    display: grid;    
+}
+
+.page-hero-content h1{
+    font-family: var(--ff-space-mono);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: var(--ff-space-mono);
+}
+
+.page-hero-content p{
+    font-family: var(--ff-space-mono);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: var(--para-color);
+    margin-top: 36px;
+}
+
+.page-hero-content button{
+    width: 216px;
+    height: 68px;
+    background: var(--text-color);
+    font-family: var(--ff-space-mono);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;    
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 64px;
+}
+
+.page-hero-content button:hover{
+    background-color: var(--white);
+    color: var(--text-color);
+}
+
+@media only screen and (max-width: 1280px) {
+    .page-container {        
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .page-hero-image {
+        width: 440px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .page-hero-content h1{
+        font-size: 48px;
+        line-height: 71px;
+    }
+    .page-hero-content p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .page-hero-image {
+        width: 340px;
+    }
+    .page-container {        
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-hero-image {
+        width: 286px;
+        place-self: center;
+    }
+    .page-header-text{
+        top: 20px;
+    }
+    .page-container{
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .page-content{
+        grid-template-columns: auto;
+        margin-top: 64px;
+    }
+    .page-hero-content{
+        margin-top: 60px;
+    }
+}

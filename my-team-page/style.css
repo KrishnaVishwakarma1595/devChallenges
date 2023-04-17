@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+:root{
+    --black: #000000;
+    --white: #FFFFFF;
+    --footer-color: #BDBDBD;
+    --footer-link-color: #f7542e;
+    /* FONTS */
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-pt-serif: 'PT Serif', serif;
+}
+
+html, body{ min-height: 100vh; }
+
+body{    
+    background: #FFFFFF;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    padding: 1.5rem 0;
+    bottom: 10px;
+    width: 100%;    
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;    
+    text-align: center;
+    font-family: var(--ff-inconsolata);
+    color: var(--footer-color);
+}
+
+.attribution a{
+    color: var(--footer-link-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .attribution{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin-top: 40px;
+    }  
+}
+
+.page-container{
+    display: grid;
+    row-gap: 96px;
+    padding-top: 110px;
+    place-items: center;
+}
+
+.page-header{
+    display: grid;
+    grid-template-columns: auto 440px;
+    column-gap: 215px;
+}
+
+.page-header h1{
+    font-family: var(--ff-pt-serif);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: var(--black);
+}
+
+.page-header-content p:first-child{
+    font-family: var(--ff-poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;    
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.page-header-content p:last-child{
+    font-family: var(--ff-poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+    margin-top: 10px;
+}
+
+.page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 105px;    
+    row-gap: 125px;
+}
+
+.team-member-avatar{
+    width: 240px;
+    height: 341px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: relative;
+}
+
+.team-member-name{
+    font-family: var(--ff-poppins);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--black);
+}
+
+.team-member-title{
+    position: absolute;
+    right: -25px;
+    top: 0;
+    font-family: var(--ff-pt-serif);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--black);
+    writing-mode: vertical-lr;
+}
+
+@media only screen and (min-width: 993px) {
+    .page-content .team-member:nth-child(3n+2){
+        margin-top: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .page-header {        
+        grid-template-columns: auto auto;
+        column-gap: 60px;
+        width: 600px;
+    }
+    .page-content{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 66px;
+    }
+    .page-content .team-member:nth-child(even){
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .page-container{
+        padding-top: 71px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .page-header {
+        grid-template-columns: auto;
+        column-gap: unset;        
+        row-gap: 38px;
+        width: auto;
+        padding: 0 34px;
+    }
+    .page-content{
+        column-gap: 43px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .team-member-avatar {
+        width: 140px;
+        height: 209px;
+    }
+    .team-member-name{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .team-member-title{
+        right: -18px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .page-content{
+        row-gap: 10px;
+    }
+}
