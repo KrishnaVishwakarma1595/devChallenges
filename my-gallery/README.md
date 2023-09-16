@@ -8,11 +8,11 @@
 
 <div align="center">
 	<h3>
-		<a href="https://{your-demo-link.your-domain}">
+		<a href="https://krishnavishwakarma1595.github.io/devChallenges/my-gallery/">
 			Demo
 		</a>
 		<span> | </span>
-		<a href="https://{your-url-to-the-solution}">
+		<a href="https://devchallenges.io/solutions/pSxWFjK5t9YgVPbwpDds">
 			Solution
 		</a>
 		<span> | </span>
@@ -47,6 +47,7 @@
 - CSS Grid
 - Mobile-first workflow
 - [Animate CSS](https://animate.style/)
+- [Working with CSS Grids](https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/)
 
 ## Features
 
