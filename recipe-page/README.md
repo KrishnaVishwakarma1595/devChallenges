@@ -8,11 +8,11 @@
 
 <div align="center">
 	<h3>
-		<a href="https://{your-demo-link.your-domain}">
+		<a href="https://krishnavishwakarma1595.github.io/devChallenges/recipe-page/">
 			Demo
 		</a>
 		<span> | </span>
-		<a href="https://{your-url-to-the-solution}">
+		<a href="https://devchallenges.io/solutions/uGEAP9xWu82iQc8BSXg6">
 			Solution
 		</a>
 		<span> | </span>
