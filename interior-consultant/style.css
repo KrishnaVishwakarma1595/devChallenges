@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+:root{
+    --black: #333333;
+    --white: #FFFFFF;
+    --gray: #828282;
+    --body-bg: #181719;
+    --footer-color: #A9A9A9;
+    /* FONTS */ 
+    --ff-crimson-pro: 'Crimson Pro', serif;
+    --ff-lora: 'Lora', serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+}
+
+html, body{ min-height: 100vh; }
+
+body{    
+    background: var(--body-bg);
+    padding: 46px 76px;
+    box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    padding: 1.5rem 0;
+    width: 100%;    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    font-family: var(--ff-montserrat);
+    color: var(--footer-color);
+    margin-top: 128px;
+}
+
+.attribution a{
+    color: var(--footer-color);
+}
+
+.attribution a:first-child{
+    font-weight: 700;    
+}
+
+@media only screen and (max-width: 768px) {
+    .attribution{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin-top: 140px;
+    }  
+}
+
+#interior-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interior-header__logo{
+    width: 102px;
+    height: 32px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-family: var(--ff-crimson-pro);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interior-navbar__list{
+    display: flex;
+    align-items: center;
+    column-gap: 86px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.interior-navbar__list_item{
+    color: var(--white);
+    font-family: var(--ff-montserrat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.interior-navbar__list_item_active{
+    font-weight: 700;
+}
+
+.interior-navbar__list_item:after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    transition: all .3s linear;
+    background-color: var(--white);
+}
+
+.interior-navbar__list_item:hover:after,.interior-navbar__list_item_active:after{
+    width: 100%;
+}
+
+#interior-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.interior-main__content_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.interior-main__content_left h1{
+    color: var(--white);
+    font-family: var(--ff-lora);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.interior-main__content_left p{
+    width: 410px;
+    color: var(--white);
+    font-family: var(--ff-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.interior-main__content_left span{
+    color: var(--white);
+    font-family: var(--ff-montserrat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.interior-main__content_right{
+    width: 737px;
+    height: 555px;
+    background: url('./photo1.png'), lightgray 50% / cover no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.interior_design_author{
+    width: 410px;
+    height: 189px;
+    background: var(--body-bg);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 23px 26px 34px 26px;
+    position: absolute;
+    top: 477px;
+    right: 32px;
+}
+
+.interior_design_author img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #C4C4C4;
+}
+
+.interior_design_author span{
+    font-family: var(--ff-montserrat);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.interior_design_author span:first-child{
+    color: var(--white);
+    font-size: 14px;
+}
+
+.interior_design_author span:last-child{
+    color: var(--gray);
+    font-size: 12px;
+}
+
+.interior_design_author p{
+    color: var(--white);
+    width: 287px;
+    font-family: var(--ff-lora);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.interior-navbar__mobile{
+    display: none;
+}
+
+.nav_menu_icon{
+    display: none;
+}
+
+.interior-navbar__list_mobile {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.interior-navbar__mobile{
+    display: none;
+    position: absolute;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background: #181719;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1023px) {
+    #interior-main{
+        align-items: flex-start;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .interior-main__content_right{
+        align-self: center;
+        margin-top: 37px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body{
+        padding: 30px;
+    }
+    .interior-navbar{
+        display: none;
+    }
+    .nav_menu_icon{
+        display: block;
+    }    
+}
+
+@media only screen and (max-width: 520px) {
+    body{
+        padding: 19px 12px;
+    }
+    .interior-main__content_left h1{
+        font-size: 36px;
+    }
+    .interior-main__content_left p{ width: 250px; }
+    .interior-main__content_left p, .interior-main__content_left span{
+        font-size: 14px;
+    }
+    .interior_design_author{
+        width: 300px;
+        top: 195px;
+        height: 138px;
+        right: 8px;
+    }
+    .interior_design_author span:first-child{ font-size: 12px; }
+    .interior_design_author span:last-child{ font-size: 10px; }
+    .interior_design_author img{
+        width: 36px;
+        height: 36px;
+    }
+    .interior_design_author p{ font-size: 18px; width: 210px; }
+    .interior-main__content_right{
+        height: 265px;
+        background-size: contain;
+    }
+}
