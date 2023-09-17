@@ -8,11 +8,11 @@
 
 <div align="center">
 	<h3>
-		<a href="https://{your-demo-link.your-domain}">
+		<a href="https://krishnavishwakarma1595.github.io/devChallenges/edie-homepage/">
 			Demo
 		</a>
 		<span> | </span>
-		<a href="https://{your-url-to-the-solution}">
+		<a href="https://devchallenges.io/solutions/Oe2pmiCBVZCdiJ1uQ3Mx">
 			Solution
 		</a>
 		<span> | </span>
@@ -36,6 +36,8 @@
 ## Overview
 
 ![screenshot](screenshot-full-view.png)
+![screenshot](screenshot-desktop.png)
+![screenshot](screenshot-mobile.png)
 
 ### Built With
 
