@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
+		<link rel="icon" href="devchallenges.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+		<title>Devchallenges 06 - Edie Homepage</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">		
+	</head>
+
+	<body>
+		<header id="edie-header__container">
+			<div class="edie_logo">Edie</div>
+			<nav class="edit__desktop_navbar">
+				<ul class="edit__desktop_navbar_list">
+					<li class="edit__desktop_navbar_listitem" data-href="hero__section">Home</li>
+					<li class="edit__desktop_navbar_listitem" data-href="services">Services</li>
+					<li class="edit__desktop_navbar_listitem" data-href="business">Our works</li>
+					<li class="edit__desktop_navbar_listitem" data-href="teams">Clients</li>
+					<li class="edit__desktop_navbar_listitem" data-href="testimonial">Contact</li>
+				</ul>
+			</nav>
+			<svg class="nav_menu_icon" width="50px" height="50px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier"> 
+					<path d="M6.5 11.75C6.08579 11.75 5.75 12.0858 5.75 12.5C5.75 12.9142 6.08579 13.25 6.5 13.25V11.75ZM18.5 13.25C18.9142 13.25 19.25 12.9142 19.25 12.5C19.25 12.0858 18.9142 11.75 18.5 11.75V13.25ZM6.5 15.75C6.08579 15.75 5.75 16.0858 5.75 16.5C5.75 16.9142 6.08579 17.25 6.5 17.25V15.75ZM18.5 17.25C18.9142 17.25 19.25 16.9142 19.25 16.5C19.25 16.0858 18.9142 15.75 18.5 15.75V17.25ZM6.5 7.75C6.08579 7.75 5.75 8.08579 5.75 8.5C5.75 8.91421 6.08579 9.25 6.5 9.25V7.75ZM18.5 9.25C18.9142 9.25 19.25 8.91421 19.25 8.5C19.25 8.08579 18.9142 7.75 18.5 7.75V9.25ZM6.5 13.25H18.5V11.75H6.5V13.25ZM6.5 17.25H18.5V15.75H6.5V17.25ZM6.5 9.25H18.5V7.75H6.5V9.25Z" fill="#000"></path> 
+				</g>
+			</svg>
+		</header>
+		<nav class="edit__mobile_navbar animate__animated">
+			<svg class="nav__close" style="align-self: flex-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="#555" width="40" height="40">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" 
+				fill="white"></path>
+			</svg>
+			<ul class="edit__mobile_navbar_list">
+				<li class="edit__mobile_navbar_listitem" data-href="hero__section">Home</li>
+				<li class="edit__mobile_navbar_listitem" data-href="services">Services</li>
+				<li class="edit__mobile_navbar_listitem" data-href="business">Our works</li>
+				<li class="edit__mobile_navbar_listitem" data-href="teams">Clients</li>
+				<li class="edit__mobile_navbar_listitem" data-href="testimonial">Contact</li>
+			</ul>		
+		</nav>
+		<main id="edie-main__container">
+			<section id="hero__section">
+				<div class="d-flex flex-column m-left-165" style="row-gap: 16px;">
+					<span class="blue-text">Unhappy with your website?</span>
+					<h1 class="hero_text">
+						We create beautiful and fast web services
+					</h1>
+				</div>
+				<figure class="hero_image animate__animated animate__fadeIn">
+					<img src="./heroImage.jpg" class="hsgm__img" alt="Image 1">
+				</figure>
+				<div class="d-flex flex-column m-left-165 join_section" style="row-gap: 42px;">
+					<h2 class="join_section_heading">Story, emotion and purpose</h2>
+					<p class="join_section_text">
+						We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+					</p>
+					<div class="d-flex flex-column join_section_form" style="row-gap: 9px;position: relative;">
+						<label for="join_us_1">Want us to contact you?</label>
+						<input id="join_us_1" type="email" value="" placeholder="Email" class="input_email" />
+						<button class="email__join">
+							Join
+						</button>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="services__section mt-200">
+				<h3>We offer high demand services</h3>
+				<div class="offered_services">
+					<div class="service__card">
+						<span class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
+								<path d="M772-603 602-771l56-56q23-23 56.5-23t56.5 23l56 56q23 23 24 55.5T829-660l-57 57Zm-58 59L290-120H120v-170l424-424 170 170Z" fill="#fff"/>
+							</svg>
+						</span>
+						<h4 class="service-name">UI/UX Design</h4>
+						<p class="service-description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+						</p>
+						<button class="get-started">
+							Get started
+						</button>
+					</div>
+					<div class="service__card">
+						<span class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
+								<path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z" fill="#fff" />
+							</svg>
+						</span>
+						<h4 class="service-name">Front End</h4>
+						<p class="service-description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+						</p>
+						<button class="get-started">
+							Get started
+						</button>
+					</div>
+					<div class="service__card">
+						<span class="service-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36">
+								<path d="M120-160v-160h720v160H120Zm80-40h80v-80h-80v80Zm-80-440v-160h720v160H120Zm80-40h80v-80h-80v80Zm-80 280v-160h720v160H120Zm80-40h80v-80h-80v80Z" fill="#fff" />
+							</svg>
+						</span>
+						<h4 class="service-name">Back End</h4>
+						<p class="service-description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+						</p>
+						<button class="get-started">
+							Get started
+						</button>
+					</div>
+				</div>
+			</section>
+			<section id="business" class="services__business mt-200">
+				<h3>Good design means good business</h3>
+				<div class="offered_business">
+					<div class="business_card">
+						<figure class="business_image animate__animated animate__fadeIn">
+							<img src="./smarthome.jpg" class="hsb__img" alt="smarthome">
+						</figure>
+						<div class="d-flex flex-column" style="row-gap: 10px;">
+							<span class="business__type">Full stack application</span>
+							<span class="business__name">Smart home dashboard</span>
+						</div>
+					</div>
+					<div class="business_card">
+						<figure class="business_image animate__animated animate__fadeIn">
+							<img src="./onboard.png" class="hsb__img" alt="onboard">
+						</figure>
+						<div class="d-flex flex-column" style="row-gap: 10px;">
+							<span class="business__type">UX/UI design</span>
+							<span class="business__name">Onboard application</span>
+						</div>
+					</div>
+					<div class="business_card">
+						<figure class="business_image animate__animated animate__fadeIn">
+							<img src="./booking.png" class="hsb__img" alt="booking">
+						</figure>
+						<div class="d-flex flex-column" style="row-gap: 10px;">
+							<span class="business__type">Mobile application</span>
+							<span class="business__name">Booking system</span>
+						</div>
+					</div>
+					<div class="business_card">
+						<figure class="business_image animate__animated animate__fadeIn">
+							<img src="./juice-product.png" class="hsb__img" alt="Juice product">
+						</figure>
+						<div class="d-flex flex-column" style="row-gap: 10px;">
+							<span class="business__type">Front End application</span>
+							<span class="business__name">Juice product homepage</span>
+						</div>
+					</div>
+				</div>
+				<span class="d-flex align-items-center" style="column-gap: 13px;align-self: flex-end;">
+					<span class="see-more">see more</span>
+					<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+						<path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z" fill="#2D9CDB" />
+					</svg>
+				</span>
+			</section>
+			<section id="teams" class="team-section mt-200">
+				<div class="d-flex flex-column" style="row-gap: 10px;">
+					<span class="red-text">Meet the team</span>
+					<h3 class="team-meet-text">
+						We are chilled and a laidback team
+					</h3>
+					<p class="team-meet-desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					</p>
+				</div>
+				<div class="team__gallery">
+					<figure class="team__gallery_img team__gallery_item1 animate__animated animate__fadeIn">
+						<img src="./person3.png" class="hsb__img" alt="Person 1">
+					</figure>
+					<div class="d-flex flex-column" style="row-gap: 11px;">
+						<figure class="team__gallery_img team__gallery_item2 animate__animated animate__fadeIn">
+							<img src="./person1.png" class="hsb__img" alt="Person 2">
+						</figure>
+						<figure class="team__gallery_img team__gallery_item3 animate__animated animate__fadeIn">
+							<img src="./person2.png" class="hsb__img" alt="Person 3">
+						</figure>
+					</div>
+				</div>
+			</section>
+			<section id="testimonial" class="testimonial_section">
+				<p class="person_testimonial">
+					“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    
+				</p>
+				<div class="d-flex align-items-center" style="column-gap: 30px;">
+					<figure class="person_tm_fig">
+						<img src="./person4.png" class="hsb__img" alt="Testimonial person 1" style="width: 82px;border-radius: 12px;">
+					</figure>
+					<div class="flex-column d-flex" style="row-gap: 12px;">
+						<span class="person_testimonial_name">Carlos Tran</span>
+						<span class="person_testimonial_by">The Decorate Gatsby</span>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="attribution animate__animated animate__fadeIn">
+			<div class="d-flex justify-content-between" style="flex-wrap: wrap;gap: 64px;">
+				<ul class="footer__nav_list">
+					<li class="footer__nav_listitem" data-href="hero__section">Home</li>
+					<li class="footer__nav_listitem" data-href="services">Services</li>
+					<li class="footer__nav_listitem" data-href="business">Our Works</li>
+					<li class="footer__nav_listitem" data-href="teams">Clients</li>
+					<li class="footer__nav_listitem" data-href="testimonial">Contact</li>
+				</ul>
+				<div style="align-self: flex-start;text-align: left;">
+					<span class="footer_logo">Edie</span>
+					<div class="d-flex align-items-center" style="column-gap: 11px;">
+						<svg width="24px" height="24px" viewBox="0 0 113.386 113.386" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<defs>
+									<path id="a" d="M0 0h113.386v113.386H0z"></path>
+								</defs>
+								<clipPath id="b">
+									<use xlink:href="#a" overflow="visible"></use>
+								</clipPath>
+								<path d="M100.136 47.884h-9.854c.718 2.787 1.142 5.699 1.142 8.71 0 19.238-15.592 34.83-34.827 34.83-19.234 0-34.827-15.592-34.827-34.83 0-3.011.426-5.923 1.144-8.71h-9.855v47.893c0 2.401 1.95 4.35 4.358 4.35h78.361a4.354 4.354 0 0 0 4.358-4.35V47.884zm0-30.473a4.355 4.355 0 0 0-4.358-4.353H82.72a4.354 4.354 0 0 0-4.354 4.353v13.063a4.353 4.353 0 0 0 4.354 4.353h13.058a4.355 4.355 0 0 0 4.358-4.353V17.411zm-43.54 17.416c-12.023 0-21.768 9.744-21.768 21.767 0 12.021 9.745 21.77 21.768 21.77s21.77-9.749 21.77-21.77c0-12.023-9.747-21.767-21.77-21.767m43.54 78.365H13.058C5.847 113.192 0 107.343 0 100.126V13.058C0 5.846 5.847 0 13.058 0h87.078c7.212 0 13.058 5.846 13.058 13.058v87.068c-.001 7.217-5.846 13.066-13.058 13.066" clip-path="url(#b)" fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff"></path>
+							</g>
+						</svg>
+						<svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="#ffffff"></path> </g></svg>
+						<svg fill="#ffffff" height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M215.2,361.2c0.1,2.2,0.1,4.5,0.1,6.8c0,69.5-52.9,149.7-149.7,149.7c-29.7,0-57.4-8.7-80.6-23.6c4.1,0.5,8.3,0.7,12.6,0.7 c24.6,0,47.3-8.4,65.3-22.5c-23-0.4-42.5-15.6-49.1-36.5c3.2,0.6,6.5,0.9,9.9,0.9c4.8,0,9.5-0.6,13.9-1.9 C13.5,430-4.6,408.7-4.6,383.2v-0.6c7.1,3.9,15.2,6.3,23.8,6.6c-14.1-9.4-23.4-25.6-23.4-43.8c0-9.6,2.6-18.7,7.1-26.5 c26,31.9,64.7,52.8,108.4,55c-0.9-3.8-1.4-7.8-1.4-12c0-29,23.6-52.6,52.6-52.6c15.1,0,28.8,6.4,38.4,16.6 c12-2.4,23.2-6.7,33.4-12.8c-3.9,12.3-12.3,22.6-23.1,29.1c10.6-1.3,20.8-4.1,30.2-8.3C234.4,344.5,225.5,353.7,215.2,361.2z"></path> </g></svg>
+					</div>
+				</div>
+				<div class="d-flex flex-column join_section_form" style="row-gap: 9px;position: relative;">
+					<label for="join_us_1" style="text-align: left;color: var(--gray-6);">Want us to contact you?</label>
+					<input id="join_us_1" type="email" value="" placeholder="Email" class="input_email" />
+					<button class="email__join" style="top: 34px;">
+						Join
+					</button>
+				</div>
+			</div>
+			<div style="margin-top: 100px;">
+				Created by <a href="https://devchallenges.io/portfolio/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>
+				- <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_blank">devChallenges.io</a>            
+			</div>
+		</footer>
+		<script src="./index.js"></script>
+	</body>
+</html>
