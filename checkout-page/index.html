@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5" />
+		<link rel="icon" href="devchallenges.png" />
+		<link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+		<title>Devchallenges 07 - Checkout Page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header class="animate__animated animate__slideInDown">
+			<h1>Checkout</h1>
+		</header>
+		<main id="checkout-main">
+			<div class="checkout__form_container animate__animated animate__slideInLeft">
+				<form id="checkout-form">
+					<div class="d-flex flex-column" style="row-gap: 18px;">
+						<h3 class="form_section_heading">Contact infomation</h3>
+						<div class="form-field">
+							<label for="email">E-mail</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email..." />
+							<span class="error-message" id="e-email"></span>
+						</div>
+						<div class="form-field">
+							<label for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="Enter your phone..." maxlength="10" />
+							<span class="error-message" id="e-phone"></span>
+						</div>
+					</div>
+					<div class="d-flex flex-column" style="row-gap: 18px;margin-top: 50px;">
+						<h3 class="form_section_heading">Shipping address</h3>
+						<div class="form-field">
+							<label for="name">Full name</label>
+							<input type="text" id="name" name="name" placeholder="Enter your full name..." />
+							<span class="error-message" id="e-name"></span>
+						</div>
+						<div class="form-field">
+							<label for="address">Address</label>
+							<input type="text" id="address" name="address" placeholder="Your address..." />
+							<span class="error-message" id="e-address"></span>
+						</div>
+						<div class="form-field">
+							<label for="city">City</label>
+							<input type="text" id="city" name="city" placeholder="Your city..." />
+							<span class="error-message" id="e-city"></span>
+						</div>
+						<div class="form-field shor-fields-container">
+							<div class="form-field form-field_short" style="width: 217px;">
+								<label for="country">Country</label>
+								<input type="text" id="country" name="country" placeholder="Your country..." />
+								<span class="expand-more">
+									<img src="./expand-more.svg" alt="" />
+								</span>
+								<div class="dropdown-list">
+									<span class="dropdown-list__item" data-value="America">America</span>
+									<span class="dropdown-list__item" data-value="Belgium">Belgium</span>
+									<span class="dropdown-list__item" data-value="Columbia">Columbia</span>
+									<span class="dropdown-list__item" data-value="Denmark">Denmark</span>
+									<span class="dropdown-list__item" data-value="Egypt">Egypt</span>
+									<span class="dropdown-list__item" data-value="India">India</span>
+								</div>
+								<span class="error-message" id="e-country"></span>
+							</div>
+							<div class="form-field form-field_short" style="width: 217px;">
+								<label for="postal-code">Postal code</label>
+								<input type="text" id="postalCode" name="postalCode" placeholder="Your postal code..." />
+								<span class="error-message" id="e-postalCode"></span>
+							</div>
+						</div>
+					</div>
+					<div class="saveInfo">
+						<input id="ig_c1" type="checkbox" class="checkout__save_info" />
+						<label for="ig_c1" id="checkbox-label"></label>
+					</div>
+					<button type="submit" class="cart_submit">
+						Continue
+					</button>
+				</form>
+			</div>
+			<div class="product-cart__section animate__animated animate__slideInRight">
+				<div class="d-flex flex-column" style="row-gap: 31px;">
+					<div class="product_item">
+						<img src="./photo1.png" alt="" class="product_item_view" />
+						<div class="d-flex flex-column justify-content-between">
+							<div class="d-flex flex-column" style="row-gap: 8px;">
+								<span class="product__name">Vintage Backbag</span>
+								<span class="product__price">
+									<span class="item-1-price">$54.99</span>
+									<del class="product_strike_price">$94.99</del>
+								</span>
+							</div>
+							<div class="product_item_quantity">
+								<span class="quantLevel decrese_quantity" data-for="item1" data-action="minus">
+									<img src="./minus.svg" alt="" />
+								</span>
+								<span class="product_quantity quant_of_item1">1</span>
+								<span class="quantLevel increase_quantity" data-for="item1" data-action="plus">
+									<img src="./add.svg" alt="" />
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="product_item">
+						<img src="./photo2.png" alt="" class="product_item_view" />
+						<div class="d-flex flex-column justify-content-between">
+							<div class="d-flex flex-column" style="row-gap: 8px;">
+								<span class="product__name">Levi Shoes</span>
+								<span class="product__price">
+									<span class="item-2-price">$74.99</span>
+									<del class="product_strike_price">$124.99</del>
+								</span>
+							</div>
+							<div class="product_item_quantity">
+								<span class="quantLevel decrese_quantity" data-for="item2" data-action="minus">
+									<img src="./minus.svg" alt="" />
+								</span>
+								<span class="product_quantity quant_of_item2">1</span>
+								<span class="quantLevel increase_quantity" data-for="item2" data-action="plus">
+									<img src="./add.svg" alt="" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-column" style="row-gap: 12px;">
+					<hr class="hr-rule" />
+					<div class="d-flex justify-content-between align-items-center">
+						<span class="cart__shiptotal_text">Shipping</span>
+						<span class="cart__shiptotal_price">$19</span>
+					</div>
+					<hr class="hr-rule" />
+					<div class="d-flex justify-content-between align-items-center">
+						<span class="cart__shiptotal_text">Total</span>
+						<span class="cart__shiptotal_price total_price">$148.98</span>
+					</div>
+				</div>
+			</div>
+			<div class="success_container" style="display: none;">
+				<svg class="animate__animated animate__bounceIn" height="100px" width="100px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" fill="#000000">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+					<g id="SVGRepo_iconCarrier"> 
+						<g> 
+							<g id="check_x5F_alt"> 
+								<path style="fill:#41d259;" d="M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M13.52,23.383 L6.158,16.02l2.828-2.828l4.533,4.535l9.617-9.617l2.828,2.828L13.52,23.383z"></path> 
+							</g> 
+						</g> 
+					</g>
+				</svg>
+				<span class="animate__animated animate__bounceIn">Order Successfull!</span>
+			</div>
+		</main>
+		<footer class="attribution animate__animated animate__fadeIn">
+            Created by <a href="https://devchallenges.io/portfolio/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>
+            - <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U" target="_blank">devChallenges.io</a>            
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
