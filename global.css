@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+:root{
+    --body-background: #050505; 
+    /* --bg: hsl(218, 23%, 16%); */
+    /* --dark-grayish-blue: hsl(217, 19%, 24%); */
+    --card-bg: #1F1F1F;
+    --neon-green: hsl(150, 100%, 66%);
+    --neon-green-light: #41d58b;
+    --light-cyan: hsl(193, 38%, 86%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --white: hsl(0, 0%, 100%);
+    --gray-1: #333333;
+    --gray-2: #4F4F4F;
+    --gray-3: #828282;
+    --gray-4: #4E5150;
+    --gray-6: #F2F2F2;
+    --tomoto-red: #EB5757;
+    --orange: #F2994A;
+    --footer-color: var(--tomoto-red);
+    /* FONTS */ 
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-moon-dance: 'Moon Dance', cursive; 
+    --ff-manrope: 'Manrope', sans-serif;
+}
+
+html, body{ min-height: 100vh; }
+
+body{    
+    background: var(--body-background);
+    overflow-x: hidden;
+    position: relative;
+    font-family: var(--ff-montserrat);
+    scroll-behavior: smooth;
+    padding: 40px 160px;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{ display: flex !important; }
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-center { justify-content: center; }
+.align-items-center{ align-items: center;}
+.align-items-start{ align-items: flex-start;}
+.align-items-end{ align-items: flex-end;}
+
+.attribution{    
+    width: 100%;    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    font-family: var(--ff-montserrat);
+    color: var(--footer-color);
+    padding-top: 30px;
+}
+
+.attribution a{
+    color: var(--footer-color);
+}
+
+.attribution a:first-child{
+    font-weight: 700;    
+}
+
+#folio-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.folio_logo{ width: 150px; }
+
+.fovs_lg{
+    border-radius: 12px;
+}
+
+.base-info{
+    position: absolute;
+    top: 56px;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.base-info h1{
+    color: var(--tomoto-red);
+    font-family: var(--ff-moon-dance);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.tag_bx{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: inline-block;
+    border: 1px solid var(--light-cyan);
+    padding: 6px 24px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.bse-inf{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline-block;
+}
+
+.folio_persona{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 40px;
+    right: 270px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.folio_persona img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    object-position: top;
+    transition: all .3s linear;
+}
+
+.folio_blog img{
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.folio_persona img:hover, .folio_blog img:hover{
+    transform: scale(1.1);
+}
+
+.self-text{
+    background-color: var(--card-bg);
+    width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: var(--light-cyan);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.12); */
+}
+
+.section__card{
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0px 4px 32px 0px rgba(255, 255, 255, 0.12);
+    padding: 24px;
+}
+
+.folio_person__ode{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 42px;
+}
+
+.section__card_heading{
+    color: var(--tomoto-red);
+    font-family: var(--ff-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.skills__list_container{ 
+    list-style: none;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.skills__list_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.skill_name{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+}
+
+.skill_scale_base{
+    width: 100%;
+    height: 10px;
+    flex: 1;
+    background-color: #C4C4C4;
+    border-radius: 12px;
+}
+
+.skill_scale{
+    background-color: var(--tomoto-red);
+    width: 90%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.folio_blog{
+    height: 200px;
+}
+
+.folio_blog img{
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.blog_name{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.blog_intro{
+    margin: 15px 0;
+    color: var(--gray-3);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blog_source_link{
+    color: var(--tomoto-red);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.folio_persona_hobbies,.folio_person_experiences{ 
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 30px;
+}
+
+.hobby_card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.folio_hobby{
+    width: 100%;
+    height: 140px;
+    border-radius: 12px;
+    background:lightgray;
+}
+
+.hobby_name{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hobby_desc{
+    color: var(--gray-3);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.experience_card{
+    display: flex;
+    column-gap: 22px;
+}
+
+.folio_exp_logo{
+    width: 119.252px;
+    height: 84px;
+    background:var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.folio_exp_logo img{
+    border-radius: 12px;
+    transition: all .3s linear;
+}
+
+.folio_exp_logo img:hover{
+    transform: scale(1.1);
+}
+
+.exp_timeline{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.exp_title{
+    color: var(--tomoto-red);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.exp_desc{
+    color: var(--gray-3);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#section-projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    margin-top: 30px;
+}
+
+.projects_list_container{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.project_list_item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.project_list_item:hover{
+    transform: scale(1.05);
+}
+
+.project_list_item:hover img{
+    transform: scale(1.1);
+}
+
+.folio_project_avatar{
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.folio_project_avatar img{
+    border-radius: 12px;
+    height: 250px;
+    transition: all 0.3s linear;
+    object-fit: cover;
+    object-position: top;
+}
+
+.folio_project_avatar img:hover{
+    transform: scale(1.1);
+}
+
+.project_stacks{
+    color: var(--light-cyan);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    column-gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.project_stacks::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -10px;
+    background: #414445;
+}
+
+.project_title{
+    color: var(--tomoto-red);
+    font-family: var(--ff-montserrat);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.project_description{
+    color: var(--gray-3);
+    font-family: var(--ff-montserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button_cta{
+    width: 135px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--tomoto-red);
+    border: 1px solid var(--tomoto-red);
+    color: var(--white);
+    font-family: var(--ff-montserrat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    outline: none;
+    transition: all .3s linear;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button_cta:hover, .button_cta:active{
+    outline: none;
+    background: transparent;
+    color: var(--tomoto-red);
+}
+
+#section-skills, #section-experience{ align-self: flex-start; }
+#section-hobbies { margin-top: -200px; }
