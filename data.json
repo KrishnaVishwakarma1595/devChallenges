@@ -8,19 +8,16 @@
     ],
     "hobbies": [
         { 
-            "image": "",
-            "title": "Gaming",
-            "text": "Quisque feugiat malesuada molestie."
+            "image": "./assets/gaming.png",
+            "title": "Gaming"
         },
         { 
-            "image": "",
-            "title": "Cooking",
-            "text": "Quisque feugiat malesuada molestie."
+            "image": "./assets/writing.jpeg",
+            "title": "Writing"
         },
         { 
-            "image": "",
-            "title": "Biking",
-            "text": "Quisque feugiat malesuada molestie."
+            "image": "./assets/reading.jpeg",
+            "title": "Reading"
         }
     ],
     "experience": [
@@ -28,19 +25,19 @@
             "logo": "./assets/fenixwork.png",
             "timeline": "Dec 2019 - Present",
             "role": "Team Lead - Frontend",
-            "work": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            "work": "Oversee front-end dev team, ensure UI/UX excellence."
         },
         { 
             "logo": "./assets/yolohealth.png",
             "timeline": "Feb 2019 - Dec 2019",
             "role": "Frontend developer",
-            "work": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            "work": "Responsible for designing and implementing the user interface (UI) and user experience (UX) of Health ATM Machine."
         },
         { 
             "logo": "./assets/wpnik.jpg",
             "timeline": "Oct 2017 - Feb 2019",
             "role": "Frontend developer",
-            "work": "Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie."
+            "work": "Responsible for designing and implementing the user interface (UI) and user experience (UX) of websites and web applications."
         }
     ],
     "projects": [
@@ -48,7 +45,7 @@
             "banner": "./404-not-found/screenshot.png",
             "tags": ["HTML", "CSS", "responsive"],
             "name": "404 not found",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "In this project, I worked with HTML and CSS to create a responsive 404 page as similar as given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/404-not-found/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/404-not-found"
         },
@@ -56,15 +53,15 @@
             "banner": "./my-team-page/screenshot.png",
             "tags": ["HTML", "CSS", "responsive"],
             "name": "My Team Page",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "In this project, I worked with CSS Grids to create a responsive page as similar as given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/my-team-page/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/my-team-page"
         },
         {
             "banner": "./interior-consultant/screenshot.png",
-            "tags": ["HTML", "CSS", "Javascript", "responsive"],
+            "tags": ["HTML", "CSS", "JS", "responsive"],
             "name": "Interior Consultant",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "In this project, I work with HTML and CSS & JS to create a responsive page with mobile navigation. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/interior-consultant/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/interior-consultant"
         },
@@ -72,7 +69,7 @@
             "banner": "./my-gallery/screenshot.png",
             "tags": ["HTML", "CSS", "responsive"],
             "name": "My Gallery",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "In this project, I continued my CSS Grids journey for responsive designs. This page is similiar with a given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/my-gallery/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/my-gallery"
         },
@@ -80,23 +77,23 @@
             "banner": "./recipe-page/screenshot-desktop.png",
             "tags": ["HTML", "CSS", "responsive"],
             "name": "Recipe Blog",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "A responsive recipe blog page using CSS grids & flexboxes & custom checkboxes. This page is similiar with a given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/recipe-page/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/recipe-page"
         },
         {
             "banner": "./edie-homepage/screenshot-desktop.png",
-            "tags": ["HTML", "CSS", "Javascript", "responsive"],
+            "tags": ["HTML", "CSS", "JS", "responsive"],
             "name": "Edie Homepage",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "Rresponsive homepage with simple mobile navigations. This page is similiar with a given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/edie-homepage/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/edie-homepage"
         },
         {
             "banner": "./checkout-page/screenshot-default.png",
-            "tags": ["HTML", "CSS", "Javascript", "responsive"],
+            "tags": ["HTML", "CSS", "JS", "responsive"],
             "name": "Checkout Page",
-            "description": "In this project, I work with HTML and CSS to create a responsive page. This page is similiar with a page. The design is from devchallenge.io",
+            "description": "Responsive checkout page with HTML form inputs handling using JS. This page is similiar with a given design. The design is from devchallenge.io",
             "demo_link": "https://krishnavishwakarma1595.github.io/devChallenges/checkout-page/",
             "code_link": "https://github.com/KrishnaVishwakarma1595/devChallenges/tree/main/checkout-page"
         }

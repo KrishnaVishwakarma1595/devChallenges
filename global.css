@@ -40,7 +40,7 @@ body{
     position: relative;
     font-family: var(--ff-montserrat);
     scroll-behavior: smooth;
-    padding: 40px 160px;
+    padding: 40px 120px;
 }
 
 button{ 
@@ -90,16 +90,29 @@ img {
     position: relative;
 }
 
+#folio-header:hover .folio_persona img{
+    transform: scale(1.1);
+}
+
 .folio_logo{ width: 150px; }
 
 .fovs_lg{
     border-radius: 12px;
 }
 
+.header__me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: url(./assets/folio-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 12px;
+}
+
 .base-info{
-    position: absolute;
-    top: 56px;
-    left: 100px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -140,11 +153,8 @@ img {
 }
 
 .folio_persona{
-    position: absolute;
     width: 200px;
     height: 200px;
-    top: 40px;
-    right: 270px;
     cursor: pointer;
     overflow: hidden;
     border-radius: 50%;
@@ -163,7 +173,7 @@ img {
     cursor: pointer;
 }
 
-.folio_persona img:hover, .folio_blog img:hover{
+.folio_persona img:hover{
     transform: scale(1.1);
 }
 
@@ -302,6 +312,13 @@ img {
     height: 140px;
     border-radius: 12px;
     background:lightgray;
+    overflow: hidden;
+}
+
+.folio_hobby img{ transition: all .3s linear; }
+
+.hobby_card:hover .folio_hobby img{
+    transform: scale(1.1);
 }
 
 .hobby_name{
@@ -324,7 +341,8 @@ img {
 
 .experience_card{
     display: flex;
-    column-gap: 22px;
+    gap: 22px;
+    cursor: pointer;
 }
 
 .folio_exp_logo{
@@ -336,6 +354,7 @@ img {
     align-items: center;
     overflow: hidden;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 .folio_exp_logo img{
@@ -343,7 +362,7 @@ img {
     transition: all .3s linear;
 }
 
-.folio_exp_logo img:hover{
+.experience_card:hover .folio_exp_logo img{
     transform: scale(1.1);
 }
 
@@ -378,7 +397,7 @@ img {
     display: flex;
     flex-direction: column;
     row-gap: 36px;
-    margin-top: 30px;
+    margin-top: 42px;
 }
 
 .projects_list_container{
@@ -395,10 +414,6 @@ img {
     border-radius: 24px;
     cursor: pointer;
     transition: all .3s linear;
-}
-
-.project_list_item:hover{
-    transform: scale(1.05);
 }
 
 .project_list_item:hover img{
@@ -492,4 +507,75 @@ img {
 }
 
 #section-skills, #section-experience{ align-self: flex-start; }
-#section-hobbies { margin-top: -200px; }
+#section-hobbies { margin-top: -178px; }
+.folio_persona_hobbies{ row-gap: 20px; }
+.filter_tags_wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.filter_tags{
+    border-radius: 12px;
+    border: 1px solid var(--tomoto-red);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--ff-montserrat);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px;
+    text-align: center;
+    transition: all .3s linear;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.filter_tags:hover, .activeTag{
+    background-color: var(--tomoto-red);
+}
+
+@media only screen and (max-width: 1280px) {
+    body{ padding: 40px 80px; }
+}
+
+@media only screen and (max-width: 1200px) {
+    body{ padding: 40px; }
+    .projects_list_container{ grid-template-columns: repeat(2, 1fr); }
+    .folio_persona{ width: 150px; height: 150px; }
+    #section-hobbies{ align-self: flex-start; }
+}
+
+@media only screen and (max-width: 992px) {
+    .base-info h1{ font-size: 36px; }
+    .tag_bx{ font-size: 12px; }
+    .self-text{ width: 100%; font-size: 14px; }
+    .folio_person__ode{ gap: 20px; grid-template-columns: repeat(1, 1fr); }
+    #section-hobbies{ margin-top: 0; }
+}
+
+@media only screen and (max-width: 767px) {
+    body{ padding: 20px; }
+    .projects_list_container{ grid-template-columns: repeat(1, 100%); }
+    .header__me{ justify-content: space-between; }
+    .base-info{ width: 300px; }
+}
+
+@media only screen and (max-width: 550px) {
+    .base-info h1{ text-align: center; }
+    .header__me{
+        flex-direction: column-reverse;
+        row-gap: 30px;
+    }
+    .base-info{ 
+        width: 100%; 
+        justify-content: center;
+        align-items: center;
+    }
+    .tag_bx{ margin: 0 auto;}
+    .skill_name{ width: 70px; }
+    .experience_card{ flex-direction: column; }
+    .base-info p{ justify-content: center; }
+}

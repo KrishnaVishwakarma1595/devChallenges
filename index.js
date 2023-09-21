@@ -1,10 +1,12 @@
 try {
     const Portfolio = class {
         constructor(){
+            this.data = {};
             this.skillsList = document.querySelector('.skills__list_container');
             this.hobbiesList = document.querySelector('.folio_persona_hobbies');
             this.experieceList = document.querySelector('.folio_person_experiences');
             this.projectsList = document.querySelector('.projects_list_container');
+            this.filterButtons = document.querySelectorAll('.filter_tags');
         }
 
         renderSkillsList = (userSkills) => {
@@ -48,13 +50,8 @@ try {
                 hobbyTitle.classList.add('hobby_name');
                 hobbyTitle.textContent = hobby.title;
 
-                const hobbyDescription = document.createElement('span');
-                hobbyDescription.classList.add('hobby_desc');
-                hobbyDescription.textContent = hobby.text;
-
                 hobbyCard.appendChild(figure);
                 hobbyCard.appendChild(hobbyTitle);
-                hobbyCard.appendChild(hobbyDescription);
 
                 this.hobbiesList.appendChild(hobbyCard);
             })
@@ -160,6 +157,7 @@ try {
             const res = await fetch('./data.json');
             const response = await res.json();
             console.log('response',response);
+            this.data = response;
             this.renderSkillsList(response.skills);
             this.renderHobbies(response.hobbies);
             this.renderExperience(response.experience);
@@ -168,6 +166,21 @@ try {
 
         init(){
             this.fetchData();
+
+            if(this.filterButtons.length > 0){
+                this.filterButtons.forEach((button) => {
+                    button.addEventListener('click', (e) => {
+                        this.projectsList.textContent = '';
+                        this.filterButtons.forEach((elem) => elem.classList.remove('activeTag'));
+                        e.target.classList.add('activeTag');
+                        const value = e.target.dataset.value;
+                        if(Object.keys(this.data).length){
+                            const projects = this.data.projects.filter((project) => project.tags.includes(value))
+                            this.renderProjects(projects);
+                        }
+                    })
+                })
+            }
         }
 
     }
