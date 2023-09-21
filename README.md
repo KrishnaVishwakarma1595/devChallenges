@@ -40,6 +40,8 @@
 ## Overview
 
 ![screenshot](./assets/screenshot.png)
+![screenshot](./assets/screenshot-desktop.png)
+![screenshot](./assets/screenshot-mobile.png)
 
 ### Built With
 
